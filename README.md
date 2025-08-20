@@ -29,12 +29,12 @@ http://localhost:8080/tours
 
 
 ---
-
-### 1️⃣ Create Tour Package  
+```json
+### Create Tour Package  
 **POST** `/tours`  
 
 **Request Body:**
-```json
+
 {
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
   "discountInPercentage": "17%",
@@ -53,7 +53,9 @@ Response (201 Created):
   "location": "Leh",
   "discountedPrice": "$1000"
 }
-2️⃣ Get All Tour Packages
+ Get All Tour Packages
+```
+```json
 GET /tours
 
 Response (200 OK):
@@ -67,7 +69,9 @@ Response (200 OK):
     "discountedPrice": "$1000"
   }
 ]
-3️⃣ Search Tour Packages by Location
+```
+```json
+ Search Tour Packages by Location
 GET /tours?location=Leh
 
 Response (200 OK):
@@ -80,7 +84,9 @@ Response (200 OK):
     "discountedPrice": "$1000"
   }
 ]
-4️⃣ Get Tour Package by ID
+```
+```json
+Get Tour Package by ID
 GET /tours/{id}
 
 Example:
@@ -102,8 +108,9 @@ Response (200 OK):
   "location": "Leh"
 }
 If not found → 404 Not Found
+```
 
-✅ Status Codes
+ Status Codes
 200 OK – Successful request
 
 201 Created – Successfully created a new tour
@@ -114,6 +121,7 @@ If not found → 404 Not Found
 Authentication/Security is disabled for simplicity.
 
 Database can be configured via application.properties.
+
 
 👨‍💻 Author
 Harsh Pardeshi
