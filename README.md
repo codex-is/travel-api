@@ -1,8 +1,7 @@
-# 🌍 Travel API (MapMyTour Internship Assignment)
+# 🌍 Travel API 
 
 This is a simple **Spring Boot CRUD REST API** for managing tour packages.  
-It was developed as part of the **MapMyTour internship assignment**.  
-
+ 
 ---
 
 ## 🚀 Features
@@ -28,15 +27,13 @@ It was developed as part of the **MapMyTour internship assignment**.
 Base URL:  
 http://localhost:8080/tours
 
-bash
-Copy
-Edit
 
+```json
 ### 1. Create Tour Package  
 **POST** `/tours`  
 
 **Request Body**:
-```json
+
 {
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
   "discountInPercentage": "17%",
@@ -49,9 +46,7 @@ Edit
 }
 Response (201 Created):
 
-json
-Copy
-Edit
+
 {
   "id": 1,
   "title": "Himalayan Trek Adventure",
@@ -63,9 +58,7 @@ GET /tours
 
 Response (200 OK):
 
-json
-Copy
-Edit
+
 [
   {
     "id": 1,
@@ -79,9 +72,7 @@ GET /tours?location=Leh
 
 Response (200 OK):
 
-json
-Copy
-Edit
+
 [
   {
     "id": 1,
@@ -95,15 +86,10 @@ GET /tours/{id}
 
 Example:
 
-bash
-Copy
-Edit
 GET /tours/1
 Response (200 OK):
 
-json
-Copy
-Edit
+
 {
   "id": 1,
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
