@@ -30,10 +30,10 @@ http://localhost:8080/tours
 
 ---
 ```json
-### Create Tour Package  
-**POST** `/tours`  
+Create Tour Package  
+POST/tours
 
-**Request Body:**
+Request Body:
 
 {
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
@@ -53,9 +53,10 @@ Response (201 Created):
   "location": "Leh",
   "discountedPrice": "$1000"
 }
- Get All Tour Packages
+ 
 ```
 ```json
+Get All Tour Packages
 GET /tours
 
 Response (200 OK):
@@ -110,7 +111,7 @@ Response (200 OK):
 If not found → 404 Not Found
 ```
 
- Status Codes
+ **Status Codes**
 200 OK – Successful request
 
 201 Created – Successfully created a new tour
