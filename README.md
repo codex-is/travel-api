@@ -72,7 +72,7 @@ Response (200 OK):
 ]
 ```
 ```json
- Search Tour Packages by Location
+Search Tour Packages by Location
 GET /tours?location=Leh
 
 Response (200 OK):
