@@ -6,10 +6,10 @@ It was developed as part of the **MapMyTour internship assignment**.
 ---
 
 ## 🚀 Features
-- Create a new tour package  
-- Fetch all tour packages  
-- Search tours by location  
-- Fetch tour package by ID  
+- ➕ Create a new tour package  
+- 📄 Fetch all tour packages  
+- 🔍 Search tours by location  
+- 🆔 Fetch a tour package by ID  
 
 ---
 
@@ -23,15 +23,20 @@ It was developed as part of the **MapMyTour internship assignment**.
 
 ---
 
+## 📡 API Endpoints
 
-
+Base URL:  
 http://localhost:8080/tours
-📡 API Endpoints
-1. Create Tour Package
-POST /tours
-Request Body:
 
+bash
+Copy
+Edit
 
+### 1. Create Tour Package  
+**POST** `/tours`  
+
+**Request Body**:
+```json
 {
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
   "discountInPercentage": "17%",
@@ -42,8 +47,11 @@ Request Body:
   "discountedPrice": "$1000",
   "location": "Leh"
 }
-Response: 201 Created
+Response (201 Created):
 
+json
+Copy
+Edit
 {
   "id": 1,
   "title": "Himalayan Trek Adventure",
@@ -52,9 +60,12 @@ Response: 201 Created
 }
 2. Get All Tour Packages
 GET /tours
-Response: 200 OK
 
+Response (200 OK):
 
+json
+Copy
+Edit
 [
   {
     "id": 1,
@@ -65,9 +76,12 @@ Response: 200 OK
 ]
 3. Search Tour Packages by Location
 GET /tours?location=Leh
-Response: 200 OK
 
+Response (200 OK):
 
+json
+Copy
+Edit
 [
   {
     "id": 1,
@@ -78,13 +92,18 @@ Response: 200 OK
 ]
 4. Get Tour Package by ID
 GET /tours/{id}
+
 Example:
 
-
+bash
+Copy
+Edit
 GET /tours/1
-Response: 200 OK (if found)
+Response (200 OK):
 
-
+json
+Copy
+Edit
 {
   "id": 1,
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
@@ -106,11 +125,9 @@ If not found: 404 Not Found
 404 Not Found – Tour not found
 
 📌 Notes
-For simplicity, authentication/security has been disabled.
+Authentication/Security is disabled for simplicity.
 
 Database can be configured via application.properties.
 
-📧 Author
+👨‍💻 Author
 Harsh Pardeshi
-
-
