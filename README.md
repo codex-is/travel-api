@@ -1,7 +1,7 @@
-# 🌍 Travel API 
+# 🌍 Travel API  
 
 This is a simple **Spring Boot CRUD REST API** for managing tour packages.  
- 
+
 ---
 
 ## 🚀 Features
@@ -24,16 +24,17 @@ This is a simple **Spring Boot CRUD REST API** for managing tour packages.
 
 ## 📡 API Endpoints
 
-Base URL:  
+**Base URL:**  
 http://localhost:8080/tours
 
 
-```json
-### 1. Create Tour Package  
+---
+
+### 1️⃣ Create Tour Package  
 **POST** `/tours`  
 
-**Request Body**:
-
+**Request Body:**
+```json
 {
   "image": "https://images.unsplash.com/photo-1598275277521-1885382d523a",
   "discountInPercentage": "17%",
@@ -46,14 +47,13 @@ http://localhost:8080/tours
 }
 Response (201 Created):
 
-
 {
   "id": 1,
   "title": "Himalayan Trek Adventure",
   "location": "Leh",
   "discountedPrice": "$1000"
 }
-2. Get All Tour Packages
+2️⃣ Get All Tour Packages
 GET /tours
 
 Response (200 OK):
@@ -67,11 +67,10 @@ Response (200 OK):
     "discountedPrice": "$1000"
   }
 ]
-3. Search Tour Packages by Location
+3️⃣ Search Tour Packages by Location
 GET /tours?location=Leh
 
 Response (200 OK):
-
 
 [
   {
@@ -81,10 +80,11 @@ Response (200 OK):
     "discountedPrice": "$1000"
   }
 ]
-4. Get Tour Package by ID
+4️⃣ Get Tour Package by ID
 GET /tours/{id}
 
 Example:
+
 
 GET /tours/1
 Response (200 OK):
@@ -101,7 +101,7 @@ Response (200 OK):
   "discountedPrice": "$1000",
   "location": "Leh"
 }
-If not found: 404 Not Found
+If not found → 404 Not Found
 
 ✅ Status Codes
 200 OK – Successful request
@@ -117,3 +117,4 @@ Database can be configured via application.properties.
 
 👨‍💻 Author
 Harsh Pardeshi
+
