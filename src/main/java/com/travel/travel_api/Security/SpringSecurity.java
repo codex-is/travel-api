@@ -1,5 +1,4 @@
 package com.travel.travel_api.Security;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -15,7 +14,8 @@ public class SpringSecurity {
         http
                 .csrf(csrf -> csrf.disable()) // disable CSRF
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll() // allow all requests
+                        .anyRequest()
+                        .permitAll() // allow all requests
                 );
 
         return http.build();
