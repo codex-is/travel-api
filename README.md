@@ -21,6 +21,8 @@ This is a simple **Spring Boot CRUD REST API** for managing tour packages.
 - **Maven**  
 
 ---
+**Base URL:**  
+http:/server:port/tours
 
 ## 📡 API Endpoints
 
