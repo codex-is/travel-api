@@ -2,6 +2,7 @@
 
 This is a simple **Spring Boot CRUD REST API** for managing tour packages.  
 
+⚠️ This project is no longer being updated
 ---
 
 ## 🚀 Features
