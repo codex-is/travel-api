@@ -24,9 +24,6 @@ This is a simple **Spring Boot CRUD REST API** for managing tour packages.
 
 ## 📡 API Endpoints
 
-**Base URL:**  
-http://localhost:8080/tours
-
 
 ---
 ```json
